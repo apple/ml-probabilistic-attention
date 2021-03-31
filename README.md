@@ -15,7 +15,7 @@ It accepts the following parameters during a forward pass:
 * beta: A scalar (see special case above) or tensor of value Gaussian precisions with dims N, G, C, H  
 * pi: A tensor of mixture component priors with dims N, G, H, H  
 * v_init: A tensor of initial vals for the values with dims N, G, Cv, H (optional)  
-* v_fixed: A tensor of fixed vals for the values with dims N, G, Cv, H (optional)  
+* v_fixed: A tensor of fixed vals for the values with dims N, G, (Cv+1), H (optional). The extra (last) channel is an indicator for the fixed val locations  
 * zeta_prior_precision: A tensor of precisions for the Gaussian prior over zeta with dims N, G, C, H (optional)  
 * mu_prior_precision: A tensor of precisions for the Gaussian prior over mu with dims N, G, Cv, H (optional)  
 * q_pos_emb: A tensor of query positional embeddings with dims C, H, H  

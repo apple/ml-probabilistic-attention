@@ -39,7 +39,7 @@ class ProbabilisticAttention(nn.Module):
         :param beta: A scalar (see special case above) or tensor of value Gaussian precisions with dims N, G, C, H
         :param pi: A tensor of mixture component priors with dims N, G, H, H
         :param v_init: A tensor of initial vals for the values with dims N, G, Cv, H (optional)
-        :param v_fixed: A tensor of fixed vals for the values with dims N, G, Cv, H (optional)
+        :param v_fixed: A tensor of fixed vals for the values with dims N, G, (Cv+1), H (optional). The extra (last) channel is an indicator for the fixed val locations
         :param zeta_prior_precision: A tensor of precisions for the Gaussian prior over zeta with dims N, G, C, H (optional)
         :param mu_prior_precision: A tensor of precisions for the Gaussian prior over mu with dims N, G, Cv, H (optional)
         :param q_pos_emb: A tensor of query positional embeddings with dims C, H, H
