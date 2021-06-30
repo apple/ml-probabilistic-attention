@@ -1,8 +1,8 @@
 # Project Name
 
-This software project accompanies the research paper, [Probabilistic Transformers](https://arxiv.org/abs/2010.15583).
+This software project accompanies the research paper [Probabilistic Attention for Interactive Segmentation](https://arxiv.org/abs/2106.15338) and its predecessor [Probabilistic Transformers](https://arxiv.org/abs/2010.15583).
 
-This project contains implementation of a Pytorch module for the probabilistic attention update proposed in the above paper. 
+It contains implementation of a Pytorch module for the probabilistic attention update proposed in the above paper(s). 
 
 ## Documentation
 
